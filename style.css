@@ -1,0 +1,318 @@
+body {
+    background-color: white;
+    height: 600vh;  /* Set the body height, which seems intended for long scroll */
+    margin: 0;       /* Reset default margin */
+}
+
+
+
+.navbar {
+    position: sticky; /* Makes the navbar sticky */
+    top: 0;            /* Sticks to the top */
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0);
+    height: 5vh;
+    z-index: 1000;   
+    
+}
+
+
+.middle {
+    display: flex;
+    font-size: 12px;
+    color: white;
+    align-items: center;
+    font-family: Pro KR, SF Pro Text, SF Pro Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.pic, .pic1, .pic2, .pic3, .pic4, .pic5{
+    cursor: pointer;
+}
+
+
+
+.pic {
+    margin-top: 20px;
+}
+
+.main {
+    text-align: center;
+}
+
+.word, .shop {
+    text-align: center;
+    font-family: Pro KR, SF Pro Text, SF Pro Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.all{
+    display: flex;
+    font-family: Pro KR, SF Pro Text, SF Pro Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+}
+
+a{
+    text-decoration: none;
+    color: #0071e3;
+}
+
+
+.buttons{
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #0077ED;
+    padding: 10px;
+    background-color: #0077ED;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.buttons:hover{
+    background-color: rgb(41, 151, 255);
+}
+
+.buy{
+    position: absolute;
+    top: 60%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #0077ED;
+    padding: 10px;
+    border-radius: 20px;
+    color: #0077ED;
+    cursor: pointer;
+
+}
+
+.buy:hover{
+    background-color: #2997ff;
+    color: white;
+}
+
+.ex{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(134, 134, 139);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.pic2{
+    margin-top: 8px;
+}
+
+.buttons2{
+    position: absolute;
+    top: 120%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #0077ED;
+    padding: 10px;
+    background-color: #0077ED;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.buttons2:hover{
+    background-color: rgb(41, 151, 255);
+}
+
+.buy2{
+    position: absolute;
+    top: 120%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #0077ED;
+    padding: 10px;
+    border-radius: 20px;
+    color: #0077ED;
+    cursor: pointer;
+
+}
+
+.buy2:hover{
+    background-color: #2997ff;
+    color: white;
+}
+
+.ex2{
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.pic2{
+    margin-top: 8px;
+}
+
+.pic5{
+    margin-top: 10px;
+}
+
+body {
+	background-color: #f8fafc;
+}
+
+.container {
+	padding: 2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 100rem;
+	margin: 0 auto;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+.last{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 12px;
+    width: 800px;
+    align-items: center;
+}
+
+.The{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(134, 134, 139);
+    margin-top: 10px;
+    
+}
+
+.wow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Real{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 800px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.wii{
+    box-shadow: 0px 1px 0px 0px rgb(134, 134, 139, 0.75);
+    -webkit-box-shadow: 0px 1px 0px 0px rgb(134, 134, 139, 0.75);
+    -moz-box-shadow: 0px 1px 0px 0px rgb(134, 134, 139, 0.75);
+    color: white;
+    width: 800px;
+}
+
+.true{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.ha{
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgb(134, 134, 139);
+    cursor: pointer;
+}
+
+.he{
+    margin-top: 20px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.ha:hover{
+    text-decoration: underline;
+}
+
+.we{
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img{
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 10px;
+}
+
+hr{
+    margin-top: 20px;
+}
